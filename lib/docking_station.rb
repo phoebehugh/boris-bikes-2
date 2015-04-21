@@ -1,6 +1,6 @@
 class DockingStation
 
-  DEFAULT_CAPACITY = 10
+  DEFAULT_CAPACITY = 20
 
   def initialize(options = {})
     @capacity = options.fetch(:capacity, DEFAULT_CAPACITY)
@@ -22,5 +22,9 @@ class DockingStation
 
   def full?
     bike_count == @capacity
+  end
+
+  def fill_station(station)
+    20.times { station.dock(Bike.new) }
   end
 end

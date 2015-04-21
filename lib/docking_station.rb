@@ -27,4 +27,8 @@ class DockingStation
   def fill_station(station)
     20.times { station.dock(Bike.new) }
   end
+
+  def available_bikes
+    @bikes.reject { |bike| bike.broken? }
+  end
 end

@@ -1,5 +1,6 @@
 require 'bike'
 require 'docking_station'
+require 'rspec'
 
 describe DockingStation do
 

@@ -1,4 +1,6 @@
 require 'bike'
+require 'rspec'
+
 
 describe Bike do
 
